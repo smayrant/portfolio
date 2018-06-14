@@ -1,0 +1,37 @@
+.skills {
+  &-container {
+    border: 1.5px solid #DADBDE;
+    border-radius: 12px;
+    position: relative;
+    top: -7em;
+    background-color: #FFF;
+    box-shadow: 2px 11px 26px -7px rgba(227,227,227,0.96);
+    padding-bottom: 3em;
+  }
+
+  &-icon {
+    color: $main-blue-color;
+    font-size: 4em;
+    margin: 0;
+    padding-top: 1em;
+  }
+
+  &-title{
+    margin-top: 0;
+    padding-top: .2em;
+    font-weight: 300;
+    color: #000;
+  }
+
+  &-list{
+    list-style: none;
+    font-weight: 200;
+    font-size: 1.3em;
+  }
+
+  &-knowledge-text{
+    color: $main-blue-color;
+    font-weight: 700;
+    font-size: 1.2em;
+  }
+}
