@@ -1,0 +1,15 @@
+.aboutMe{
+  text-align: center;
+  padding-top: 0;
+  display: block;
+  vertical-align: top;
+
+  &-img{
+    margin-bottom: 3em;
+
+  }
+
+  &-text{
+    color: $main-text-color-grey;
+  }
+}
