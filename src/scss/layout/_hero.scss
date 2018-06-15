@@ -16,7 +16,7 @@
     }
 
     h2{
-      font-weight: 100;
+      font-weight: 300;
       color: #000;
       margin: 2.4em 0 2.4em 0;
       // margin-bottom:
@@ -25,10 +25,10 @@
 
   &-avatar{
     height: auto;
-    width: 8em;
+    width: 11em;
     border-radius: 50%;
     display: block;
-    border: solid 1px $main-blue-color;
+    // border: solid 1px $main-blue-color;
   }
 
   &-icon{

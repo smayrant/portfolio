@@ -362,16 +362,15 @@ img {
     text-shadow: 3px 1px 4px #969696;
     margin-bottom: 1em; }
   .hero-text h2 {
-    font-weight: 100;
+    font-weight: 300;
     color: #000;
     margin: 2.4em 0 2.4em 0; }
 
 .hero-avatar {
   height: auto;
-  width: 8em;
+  width: 11em;
   border-radius: 50%;
-  display: block;
-  border: solid 1px #455abd; }
+  display: block; }
 
 .hero-icon {
   max-width: 512px; }
@@ -421,16 +420,33 @@ img {
 
 .skills-list {
   list-style: none;
-  font-weight: 200;
-  font-size: 1.3em; }
+  font-weight: 300;
+  font-size: 1.3em;
+  letter-spacing: .2rem;
+  line-height: 2rem; }
 
 .skills-knowledge-text {
   color: #455abd;
   font-weight: 700;
-  font-size: 1.2em; }
+  font-size: 1.5em; }
 
 .portfolio-title {
   margin-top: 0;
   padding-top: 0; }
+
+.portfolio-image {
+  width: 40em;
+  border-radius: 25px;
+  position: relative; }
+  .portfolio-image:after {
+    content: " ";
+    z-index: 10;
+    display: block;
+    position: absolute;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.5); }
 
 /*# sourceMappingURL=style.min.css.map */
