@@ -1,0 +1,33 @@
+.footer {
+  background: $main-blue-color;
+  color: #dbdbdb;
+  padding: 3em 0;
+  clear: both;
+
+  &-icon {
+    font-size: 3em;
+    color: #FFF;
+  }
+
+  &-quote {
+    font-weight: 300;
+    font-size: 1.2em;
+    padding-bottom: 1.5em;
+
+    @media(min-width: 769px){
+      font-size: 1.4em;
+    }
+  }
+
+  &-linkedin-link, &-email-link, &-github-link{
+    @include footer-link;
+  }
+
+  &-github-link{
+    margin-left: 0;
+  }
+
+  &-copywrite{
+    font-size: 1.1em;
+  }
+}

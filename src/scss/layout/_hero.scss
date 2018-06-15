@@ -19,16 +19,15 @@
       font-weight: 300;
       color: #000;
       margin: 2.4em 0 2.4em 0;
-      // margin-bottom:
+
     }
   }
 
   &-avatar{
     height: auto;
-    width: 11em;
-    border-radius: 50%;
+    width: 40%;
+    max-width: 300px;
     display: block;
-    // border: solid 1px $main-blue-color;
   }
 
   &-icon{

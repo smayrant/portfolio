@@ -19,16 +19,16 @@
       <p class="navbar-button">Let's Connect</p>
     </nav>
   </section>
-  <div class="hero">
-    <section class="hero-image">
-      <div class="hero-text wrapper">
-        <h1><span class="hero-hi-text">Hi!</span> I'm Sheldrick</h1>
-        <img class="hero-avatar wrapper" src="./src/images/myAvatar.svg" alt="My avatar">
-        <h2>Front End Web Developer | Lover of code | Lifelong learner</h2>
-        <img class="hero-icon wrapper" src="./src/images/icon.svg" alt="">
-      </div>
-    </section>
-  </div>
+
+  <section class="hero-image">
+    <div class="hero-text wrapper">
+      <h1><span class="hero-hi-text">Hi!</span> I'm Sheldrick</h1>
+      <img class="hero-avatar wrapper" src="./src/images/myAvatar.svg" alt="My avatar">
+      <h2>Front End Web Developer | Lover of code | Lifelong learner</h2>
+      <img class="hero-icon wrapper" src="./src/images/icon.svg" alt="">
+    </div>
+  </section>
+
 
   <section class="aboutMe section-title">
     <h3 class="aboutMe-title">About Me</h3>
@@ -46,6 +46,7 @@
         <li>CSS</li>
         <li>Javascript (ES6)</li>
         <li>Gulp</li>
+        <li>SASS</li>
         <li>NPM</li>
         <li>Yarn</li>
         <li>Babel</li>
@@ -64,45 +65,65 @@
   </section>
 
   <section class="portfolio wrapper">
+    <img class="portfolio-icon" src="./src/images/portfolio.svg" alt="">
     <h3 class="portfolio-title section-title">Portfolio</h3>
-    <div class="portfolio-container">
-      <figure>
-        <img class="portfolio-image"src="https://images.unsplash.com/photo-1523978591478-c753949ff840?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=c92fa17c403874495c84c6f31f5ef403&auto=format&fit=crop&w=500&q=60" alt="">
-        <figcaption>
-          <p class="portfolio-caption-title"></p>
-          <button class="portfolio-button"type="button" name="button">Live Site</button>
-          <button class="portfolio-button"type="button" name="button">More Details</button>
-        </figcaption>
-      </figure>
+    <h5 class="portfolio-subtitle">Here are a few of my recent projects. This section will gradually be updated with more work.</h5>
+    <div class="main-portfolio-container wrapper">
+      <div class="project-container">
+        <div class="portfolio-content">
+          <a href="#" target="_blank">
+            <div class="portfolio-content-overlay"></div>
+            <img class="portfolio-content-image" src="https://images.unsplash.com/photo-1433360405326-e50f909805b3?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&w=1080&fit=max&s=359e8e12304ffa04a38627a157fc3362">
+            <div class="portfolio-content-details fadeIn-bottom">
+              <h3 class="portfolio-content-title">This is a title</h3>
+              <p class="portfolio-content-text">This is a short description</p>
+            </div>
+          </a>
+        </div>
+      </div>
 
-      <figure>
-        <img class="portfolio-image"src="https://images.unsplash.com/photo-1523978591478-c753949ff840?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=c92fa17c403874495c84c6f31f5ef403&auto=format&fit=crop&w=500&q=60" alt="">
-        <figcaption>
-          <p class="portfolio-caption-title"></p>
-          <button class="portfolio-button"type="button" name="button">Live Site</button>
-          <button class="portfolio-button"type="button" name="button">More Details</button>
-        </figcaption>
-      </figure>
+      <div class="project-container">
+        <div class="portfolio-content">
+          <a href="#" target="_blank">
+            <div class="portfolio-content-overlay"></div>
+            <img class="portfolio-content-image" src="https://images.unsplash.com/photo-1433360405326-e50f909805b3?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&w=1080&fit=max&s=359e8e12304ffa04a38627a157fc3362">
+            <div class="portfolio-content-details fadeIn-bottom">
+              <h3 class="portfolio-content-title">This is a title</h3>
+              <p class="portfolio-content-text">This is a short description</p>
+            </div>
+          </a>
+        </div>
+      </div>
 
-      <figure>
-        <img class="portfolio-image"src="https://images.unsplash.com/photo-1523978591478-c753949ff840?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=c92fa17c403874495c84c6f31f5ef403&auto=format&fit=crop&w=500&q=60" alt="">
-        <figcaption>
-          <p class="portfolio-caption-title"></p>
-          <button class="portfolio-button"type="button" name="button">Live Site</button>
-          <button class="portfolio-button"type="button" name="button">More Details</button>
-        </figcaption>
-      </figure>
+      <div class="project-container">
+        <div class="portfolio-content">
+          <a href="#" target="_blank">
+            <div class="portfolio-content-overlay"></div>
+            <img class="portfolio-content-image" src="https://images.unsplash.com/photo-1433360405326-e50f909805b3?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&w=1080&fit=max&s=359e8e12304ffa04a38627a157fc3362">
+            <div class="portfolio-content-details fadeIn-bottom">
+              <h3 class="portfolio-content-title">This is a title</h3>
+              <p class="portfolio-content-text">This is a short description</p>
+            </div>
+          </a>
+        </div>
+      </div>
+
     </div>
   </section>
 
   <section class="footer">
-    <footer>
-      <div class="footer-github-link"></div>
-      <div class="footer-email-link"></div>
-      <div class="footer-linkedin-link"></div>
+    <footer class="wrapper">
+      <p class="footer-icon"><i class="fas fa-code"></i></p>
+      <p class="footer-quote">“The key to happiness is really progress and growth and constantly working on yourself and developing something.” - Lewis Howes</p>
+      <div class="footer-icon-container">
+        <a href="https://github.com/smayrant" target="_blank" class="footer-github-link"><i class="fab fa-github"></i></a>
+        <a href="mailto:mrmayrant@yahoo.com?Subject=Hello" class="footer-email-link"><i class="fas fa-envelope-open"></i></a>
+        <a href="https://www.linkedin.com/in/sheldrickmayrant/" target="_blank" class="footer-linkedin-link"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+      <p class="footer-copywrite">Handcrafted by me &copy 2018</p>
     </footer>
   </section>
-
+  <a href="#"></a>
 </body>
 
 </html>

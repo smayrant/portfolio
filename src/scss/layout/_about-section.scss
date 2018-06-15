@@ -24,5 +24,9 @@
     line-height: 1.8em;
     font-weight: 200;
     max-width: 900px;
+
+    @media(min-width: 769px){
+      font-size: .5em;
+    }
   }
 }
