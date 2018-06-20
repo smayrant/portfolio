@@ -1,30 +1,31 @@
-.portfolio{
-
+.portfolio {
   border-top: 1px solid #E6ECF8;
+  @media (min-width: 769px) {
+    margin-bottom: 6em;
+  }
 
-  &-title{
+  &-title {
     margin-top: 0;
     padding-top: 0;
     margin-top: 0;
-    padding-top: .2em;
+    padding-top: 0.2em;
     font-weight: 300;
     color: #000;
   }
 
-  &-subtitle{
+  &-subtitle {
     font-weight: 300;
     font-size: 1.3em;
-    letter-spacing: .1rem;
+    letter-spacing: 0.1rem;
   }
 
-  &-image{
+  &-image {
     width: 100%;
     border-radius: 25px;
     position: relative;
-
   }
 
-  &-button{
+  &-button {
     @include button;
     color: $main-blue-color;
     border: solid 1.5px $main-blue-color;
@@ -32,7 +33,7 @@
     bottom: 9px;
   }
 
-  &-button-2{
+  &-button-2 {
     @include button;
     left: 170px;
     color: $main-blue-color;
@@ -41,26 +42,25 @@
     bottom: 9px;
   }
 
-  &-icon{
+  &-icon {
     max-width: 100px;
     margin-top: 3em;
   }
 }
 
-.project-container{
+.project-container {
   color: #1a1a1a;
   text-align: center;
   margin-bottom: 27px;
-  @media (min-width: 768px){
-      float: left;
+
+  @media (min-width: 768px) {
+    float: left;
     width: 50%;
-     }
-
-     @media (min-width: 1088px){
-         float: left;
-       width: 33%;
-        }
-
+  }
+  @media (min-width: 1088px) {
+    float: left;
+    width: 33%;
+  }
 }
 
 .portfolio-content {
@@ -68,7 +68,10 @@
   width: 90%;
   margin: auto;
   overflow: hidden;
-
+  &-image{
+    border-radius: 14px;
+    height: auto;
+  }
 }
 
 .portfolio-content .portfolio-content-overlay {
@@ -87,10 +90,9 @@
   border-radius: 14px;
 }
 
-.portfolio-content:hover .portfolio-content-overlay{
+.portfolio-content:hover .portfolio-content-overlay {
   opacity: 1;
 }
-
 
 .portfolio-content-details {
   position: absolute;
@@ -103,27 +105,23 @@
   opacity: 0;
   transform: translate(-50%, -50%);
   transition: all 0.3s ease-in-out 0s;
+
+  p{
+    font-size: 1.5rem;
+    color: #fff;
+  }
 }
 
-.portfolio-content:hover .portfolio-content-details{
+.portfolio-content:hover .portfolio-content-details {
   top: 50%;
   left: 50%;
   opacity: 1;
 }
 
-.portfolio-content-details h3{
+.portfolio-content-details h3 {
   color: #fff;
   font-weight: 500;
   letter-spacing: 0.15em;
   margin-bottom: 0.5em;
   text-transform: uppercase;
-}
-
-.portfolio-content-details p{
-  color: #fff;
-  font-size: 0.8em;
-}
-
-.portfolio-content-image {
-  border-radius: 14px;
 }
