@@ -58,7 +58,7 @@
     width: 50%;
   }
   @media (min-width: 1088px) {
-    float: left;
+    float: right;
     width: 33%;
     margin-bottom: 65px;
   }
@@ -72,6 +72,24 @@
   &-image{
     border-radius: 14px;
     height: auto;
+  }
+
+  &-title{
+    padding-top: 10px;
+  }
+
+  &-link{
+    text-decoration: none;
+    border: solid 1.5px #FFF;
+    border-radius: 24px;
+    padding: 10px;
+    color: #FFF;
+    font-weight: 200;
+    font-size: .8em;
+  }
+
+  a{
+    text-decoration: none;
   }
 }
 
@@ -108,8 +126,9 @@
   transition: all 0.3s ease-in-out 0s;
 
   p{
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     color: #fff;
+    padding-bottom: 10px;
   }
 }
 
